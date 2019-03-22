@@ -17,6 +17,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".AnalisisDiario"></activity>
+        <activity android:name=".Principal"></activity>
+        <activity android:name=".RegistroDeUsuario"></activity>
+        <activity android:name=".AyudaSeguimiento"></activity>
+        <activity android:name=".AyudaAjustes"></activity>
+        <activity android:name=".AyudaRecordatorios"></activity>
+        <activity android:name=".AyudaOpcionesDeSeguimiento"></activity>
     </application>
 
 </manifest>

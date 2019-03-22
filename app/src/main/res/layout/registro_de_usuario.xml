@@ -4,7 +4,7 @@
                                              xmlns:tools="http://schemas.android.com/tools"
                                              android:layout_width="match_parent"
                                              android:layout_height="match_parent"
-                                             android:background="@color/anotherTextColor">
+                                             android:background="@color/background">
 
     <ImageView
         android:id="@+id/imageView17"
@@ -94,7 +94,7 @@
         android:ems="10"
         android:hint="Correo electrónico"
         android:inputType="textEmailAddress"
-        android:textColorHint="@color/primaryLightColor"
+        android:textColorHint="@color/text3"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -108,8 +108,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:text="CheckBox"
-        android:textColor="@color/primaryLightColor"
-        android:textColorHint="@color/primaryLightColor"
+        android:textColor="@color/text3"
+        android:textColorHint="@color/text3"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -154,8 +154,8 @@
         android:ems="10"
         android:hint="Número telefónico"
         android:inputType="phone"
-        android:textColor="@color/primaryLightColor"
-        android:textColorHint="@color/primaryLightColor"
+        android:textColor="@color/text3"
+        android:textColorHint="@color/text3"
         android:textSize="16sp"
         tools:layout_editor_absoluteX="9dp"
         tools:layout_editor_absoluteY="387dp"/>
@@ -167,8 +167,8 @@
         android:ems="10"
         android:hint="Teléfono de emergencia 1"
         android:inputType="phone"
-        android:textColor="@color/primaryLightColor"
-        android:textColorHint="@color/primaryLightColor"
+        android:textColor="@color/text3"
+        android:textColorHint="@color/text3"
         android:textSize="16sp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="447dp"/>
@@ -180,8 +180,8 @@
         android:ems="10"
         android:hint="Teléfono de emergencia 2"
         android:inputType="phone"
-        android:textColor="@color/primaryLightColor"
-        android:textColorHint="@color/primaryLightColor"
+        android:textColor="@color/text3"
+        android:textColorHint="@color/text3"
         android:textSize="16sp"
         tools:layout_editor_absoluteX="10dp"
         tools:layout_editor_absoluteY="499dp"/>
