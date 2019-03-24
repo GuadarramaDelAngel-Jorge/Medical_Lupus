@@ -12,7 +12,6 @@
         <activity android:name=".Recordatorios"></activity>
         <activity android:name=".Sobre_ti" />
         <activity android:name=".Ayuda__politicas_y_privacidad" />
-        <activity android:name=".Ayuda_perfil" />
         <activity android:name=".Resultados" />
         <activity android:name=".MainActivity">
             <intent-filter>
