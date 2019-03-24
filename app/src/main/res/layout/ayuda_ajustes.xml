@@ -17,73 +17,67 @@
         app:layout_constraintTop_toBottomOf="@+id/user_name_ayuda"/>
 
     <Button
-        android:id="@+id/home_button2"
+        android:id="@+id/home_button"
         android:layout_width="65dp"
         android:layout_height="40dp"
-        android:background="@color/primaryDarkColor"
-        android:onClick="ViewAHome"
+        android:background="@color/primaryTextColor"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
         android:text="Inicio"
-        android:textSize="14dp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/anadir_diario_button2"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.011" />
+        app:layout_constraintVertical_bias="0.013"/>
 
     <Button
-        android:id="@+id/anadir_diario_button2"
+        android:id="@+id/anadir_diario_button"
         android:layout_width="115dp"
         android:layout_height="40dp"
-        android:background="@color/primaryDarkColor"
-        android:onClick="ViewAAnalisis"
+        android:background="@color/secondaryDarkColor"
         android:paddingLeft="2dp"
         android:paddingRight="2dp"
         android:text="Análisis diario"
         android:textAlignment="center"
-        android:textSize="14dp"
+        android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/resultados_button"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/home_button2"
+        app:layout_constraintEnd_toStartOf="@+id/Resultados_button"
+        app:layout_constraintStart_toEndOf="@+id/home_button"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.011" />
+        app:layout_constraintVertical_bias="0.013" />
 
     <Button
-        android:id="@+id/resultados_button"
+        android:id="@+id/Resultados_button"
         android:layout_width="110dp"
         android:layout_height="40dp"
-        android:background="@color/primaryDarkColor"
-        android:onClick="ViewAResultados"
+        android:background="@color/secondaryTextColor"
         android:paddingLeft="2dp"
         android:paddingRight="2dp"
         android:text="Resultados"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ayuda_button2"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/anadir_diario_button2"
+        app:layout_constraintEnd_toStartOf="@+id/ayuda_button"
+        app:layout_constraintStart_toEndOf="@+id/anadir_diario_button"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.011" />
+        app:layout_constraintVertical_bias="0.013" />
 
     <Button
-        android:id="@+id/ayuda_button2"
+        android:id="@+id/ayuda_button"
         android:layout_width="84dp"
-        android:layout_height="41dp"
-        android:background="@color/primaryLightColor"
-        android:onClick="ViewAAyuda"
+        android:layout_height="40dp"
+        android:background="@color/secondaryTextColor"
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
         android:text="Ayuda"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/resultados_button"
+        app:layout_constraintHorizontal_bias="0.981"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.011" />
+        app:layout_constraintVertical_bias="0.013" />
 
     <TextView
         android:id="@+id/textView2"

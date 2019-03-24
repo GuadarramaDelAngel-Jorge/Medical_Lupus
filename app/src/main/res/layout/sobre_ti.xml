@@ -58,23 +58,16 @@
             android:text="Descripcion personal" />
     </android.support.design.widget.TextInputLayout>
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/estado_input"
-        android:layout_width="391dp"
-        android:layout_height="48dp"
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="27dp"
-        android:layout_marginEnd="12dp"
-        android:hint="Estado "
-        app:hintEnabled="false"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="8dp"
+        android:spinnerMode="dropdown"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5">
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5" />
 
-        <android.support.design.widget.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="hint"
-            android:text="Estado" />
-    </android.support.design.widget.TextInputLayout>
 </android.support.constraint.ConstraintLayout>
