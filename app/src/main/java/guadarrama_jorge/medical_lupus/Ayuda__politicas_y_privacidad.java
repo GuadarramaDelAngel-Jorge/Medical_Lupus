@@ -2,19 +2,16 @@ package guadarrama_jorge.medical_lupus;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.app.Activity;
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
-import android.widget.Toast;
 
 public class Ayuda__politicas_y_privacidad extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ayuda__politicas_y_privacidad);
+        setContentView(R.layout.ayuda_politicas_y_privacidad);
 
 
         WebView algo = (WebView) findViewById(R.id.webview);
