@@ -5,79 +5,81 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/user_name_ayuda2"
-        android:layout_width="156dp"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:text="Correo electrónico"
-        android:textColor="@color/secondaryTextColor"
-        android:textSize="24sp"
-        app:layout_constraintStart_toStartOf="@+id/user_name_ayuda"
-        app:layout_constraintTop_toBottomOf="@+id/user_name_ayuda"/>
-
-    <Button
-        android:id="@+id/home_button"
-        android:layout_width="65dp"
-        android:layout_height="40dp"
-        android:background="@color/primaryTextColor"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:text="Inicio"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.013"/>
+        app:layout_constraintTop_toTopOf="parent">
 
-    <Button
-        android:id="@+id/anadir_diario_button"
-        android:layout_width="115dp"
-        android:layout_height="40dp"
-        android:background="@color/secondaryDarkColor"
-        android:paddingLeft="2dp"
-        android:paddingRight="2dp"
-        android:text="Análisis diario"
-        android:textAlignment="center"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/Resultados_button"
-        app:layout_constraintStart_toEndOf="@+id/home_button"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.013" />
+        <Button
+            android:id="@+id/button5"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:text="Inicio"
+            android:textSize="12sp"/>
 
-    <Button
-        android:id="@+id/Resultados_button"
-        android:layout_width="110dp"
-        android:layout_height="40dp"
-        android:background="@color/secondaryTextColor"
-        android:paddingLeft="2dp"
-        android:paddingRight="2dp"
-        android:text="Resultados"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/ayuda_button"
-        app:layout_constraintStart_toEndOf="@+id/anadir_diario_button"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.013" />
+        <Button
+            android:id="@+id/button4"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_child_care_black_24dp"
+            android:text="Análisis diario"
+            android:textSize="12sp"/>
 
-    <Button
-        android:id="@+id/ayuda_button"
-        android:layout_width="84dp"
-        android:layout_height="40dp"
-        android:background="@color/secondaryTextColor"
-        android:paddingLeft="8dp"
-        android:paddingRight="8dp"
-        android:text="Ayuda"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.981"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.013" />
+        <Button
+            android:id="@+id/button3"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_call_black_24dp"
+            android:text="Resultados"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <Button
+            android:id="@+id/button"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_android_black_24dp"
+            android:text="Recordatorios"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/button6"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_android_black_24dp"
+            android:text="Ayuda"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/textView2"
@@ -97,31 +99,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.125" />
 
-    <TextView
-        android:id="@+id/user_name_ayuda"
-        android:layout_width="155dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="104dp"
-        android:text="Nombre"
-        android:textColor="@color/secondaryTextColor"
-        android:textSize="24sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
-
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="112dp"
-        android:layout_marginTop="45dp"
         android:layout_marginEnd="210dp"
         android:background="@color/primaryDarkColor"
         android:onClick="ViewAToast"
         android:text="Sobre tí"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_name_ayuda2" />
+        tools:layout_editor_absoluteY="302dp" />
 
     <Button
         android:id="@+id/button5"
@@ -178,20 +167,5 @@
         app:layout_constraintHorizontal_bias="0.458"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button7" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="107dp"
-        android:layout_height="104dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.027"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.0" />
 
 </android.support.constraint.ConstraintLayout>
