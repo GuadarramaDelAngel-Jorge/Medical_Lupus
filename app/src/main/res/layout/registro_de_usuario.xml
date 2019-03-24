@@ -14,12 +14,13 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
+        android:src="@drawable/ic_round_calendar_today_24px_white"
+        android:tint="@color/primaryTextColor"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.035"
-       />
+        app:layout_constraintVertical_bias="0.035"/>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/textInputLayout3"
@@ -210,4 +211,5 @@
             android:textColorHint="@color/primaryLightColor"
             android:textSize="16sp"/>
     </android.support.design.widget.TextInputLayout>
+
 </android.support.constraint.ConstraintLayout>
