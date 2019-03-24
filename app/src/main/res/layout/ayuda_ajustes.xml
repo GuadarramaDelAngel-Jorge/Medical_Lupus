@@ -164,7 +164,7 @@
         android:layout_marginEnd="210dp"
         android:background="@color/primaryDarkColor"
         android:onClick="ViewAToast"
-        android:text="Ajustes"
+        android:text="Foros"
         app:layout_constraintEnd_toEndOf="@+id/button6"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/button6"
