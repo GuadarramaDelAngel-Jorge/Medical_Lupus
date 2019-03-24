@@ -4,7 +4,7 @@
                                              xmlns:tools="http://schemas.android.com/tools"
                                              android:layout_width="match_parent"
                                              android:layout_height="match_parent"
-                                             android:background="@color/background">
+                                             android:background="@color/primaryColor">
 
     <ImageView
         android:id="@+id/imageView17"
@@ -94,7 +94,7 @@
         android:ems="10"
         android:hint="Correo electrónico"
         android:inputType="textEmailAddress"
-        android:textColorHint="@color/text3"
+        android:textColorHint="@color/secondaryLightColor"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -107,14 +107,16 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
         android:text="CheckBox"
-        android:textColor="@color/text3"
-        android:textColorHint="@color/text3"
+        android:textColor="@color/secondaryLightColor"
+        android:textColorHint="@color/secondaryLightColor"
         android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/button10"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="618dp"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
         tools:text="He leído y acepto los términos y condiciones"/>
 
     <Button
@@ -136,16 +138,22 @@
         android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
-        tools:layout_editor_absoluteX="9dp"/>
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"/>
 
     <Spinner
         android:id="@+id/spinner2"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"
-        tools:layout_editor_absoluteX="8dp"/>
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner"/>
 
     <EditText
         android:id="@+id/editText3"
@@ -154,8 +162,8 @@
         android:ems="10"
         android:hint="Número telefónico"
         android:inputType="phone"
-        android:textColor="@color/text3"
-        android:textColorHint="@color/text3"
+        android:textColor="@color/secondaryLightColor"
+        android:textColorHint="@color/secondaryLightColor"
         android:textSize="16sp"
         tools:layout_editor_absoluteX="9dp"
         tools:layout_editor_absoluteY="387dp"/>
@@ -167,8 +175,8 @@
         android:ems="10"
         android:hint="Teléfono de emergencia 1"
         android:inputType="phone"
-        android:textColor="@color/text3"
-        android:textColorHint="@color/text3"
+        android:textColor="@color/secondaryLightColor"
+        android:textColorHint="@color/secondaryLightColor"
         android:textSize="16sp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="447dp"/>
@@ -180,13 +188,14 @@
         android:ems="10"
         android:hint="Teléfono de emergencia 2"
         android:inputType="phone"
-        android:textColor="@color/text3"
-        android:textColorHint="@color/text3"
+        android:textColor="@color/secondaryLightColor"
+        android:textColorHint="@color/secondaryLightColor"
         android:textSize="16sp"
         tools:layout_editor_absoluteX="10dp"
         tools:layout_editor_absoluteY="499dp"/>
 
     <android.support.design.widget.TextInputLayout
+        android:id="@+id/textInputLayout4"
         android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:hint="Número de seguro social"
