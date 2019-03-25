@@ -67,6 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableLeft="@drawable/create1"
+                android:onClick="ViewRAnalisis"
                 android:text="Análisis diario"
                 android:textSize="18sp" />
 
@@ -77,6 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableLeft="@drawable/assignment1"
+                android:onClick="ViewRBResultado"
                 android:text="Resultados"
                 android:textSize="18sp" />
 
@@ -110,6 +112,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableLeft="@drawable/help1"
+                android:onClick="ViewADAyuda"
                 android:text="Ayuda"
                 android:textSize="18sp" />
         </LinearLayout>
