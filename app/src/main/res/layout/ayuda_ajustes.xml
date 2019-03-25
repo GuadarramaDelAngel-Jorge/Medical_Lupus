@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/secondaryDarkColor">
+    android:background="@color/colorPrimary">
 
     <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -26,37 +26,34 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <Button
-                android:id="@+id/opciones_seguimiento"
-                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/button5"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableLeft="@drawable/home1"
-                android:onClick="ViewRHome"
                 android:text="Inicio"
-                android:textSize="12sp" />
+                android:textSize="18sp" />
 
             <Button
-                android:id="@+id/button_sobre_ti"
-                style="?android:attr/borderlessButtonStyle"
+                android:id="@+id/button4"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableLeft="@drawable/create1"
-                android:onClick="ViewRAnalisis"
                 android:text="Análisis diario"
-                android:textSize="12sp" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/button3"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableLeft="@drawable/assignment1"
-                android:onClick="ViewRResultados"
                 android:text="Resultados"
-                android:textSize="12sp" />
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -72,24 +69,23 @@
 
             <Button
                 android:id="@+id/button"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:drawableLeft="@drawable/ic_android_black_24dp"
+                android:drawableLeft="@drawable/done1"
                 android:text="Recordatorios"
-                android:textSize="12sp" />
+                android:textSize="18sp" />
 
             <Button
                 android:id="@+id/button6"
-                style="?android:attr/borderlessButtonStyle"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:drawableLeft="@drawable/ic_android_black_24dp"
-                android:onClick="ViewADAyuda"
+                android:drawableLeft="@drawable/help1"
                 android:text="Ayuda"
-                android:textSize="12sp" />
+                android:textSize="18sp" />
         </LinearLayout>
 
 
@@ -113,6 +109,7 @@
 
         <Button
             android:id="@+id/button_sobre_ti"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="112dp"
@@ -121,6 +118,7 @@
             android:background="@color/secondaryColor"
             android:onClick="ViewAToast"
             android:text="Sobre tí"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
@@ -128,12 +126,14 @@
 
         <Button
             android:id="@+id/opciones_seguimiento"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:background="@color/secondaryColor"
             android:onClick="ViewAToast"
             android:text="Opciones de seguimiento"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="@+id/button_sobre_ti"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/button_sobre_ti"
@@ -141,6 +141,7 @@
 
         <Button
             android:id="@+id/button6"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
@@ -148,6 +149,7 @@
             android:background="@color/secondaryColor"
             android:onClick="ViewAToast"
             android:text="Recordatorios"
+            android:textSize="18sp"
             app:layout_constraintEnd_toEndOf="@+id/opciones_seguimiento"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/opciones_seguimiento"
@@ -155,12 +157,14 @@
 
         <Button
             android:id="@+id/button7"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="210dp"
             android:background="@color/secondaryColor"
             android:onClick="ViewAToast"
+            android:textSize="18sp"
             android:text="Foros"
             app:layout_constraintEnd_toEndOf="@+id/button6"
             app:layout_constraintHorizontal_bias="0.0"
@@ -169,16 +173,18 @@
 
         <Button
             android:id="@+id/button8"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
+            android:textSize="18sp"
             android:background="@color/secondaryColor"
             android:onClick="ViewAayuda_politicas_y_privacidad"
             android:text="Políticas y Privacidad"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.458"
+            app:layout_constraintHorizontal_bias="0.358"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button7" />
 
