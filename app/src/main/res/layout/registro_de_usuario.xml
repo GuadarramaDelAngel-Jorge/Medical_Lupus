@@ -116,8 +116,8 @@
             android:layout_margin="10dp"
             android:hint="Nombre"
             android:inputType="textLongMessage"
-            android:textColor="@color/primaryLightColor"
-            android:textColorHint="@color/primaryLightColor"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
             android:textSize="16sp"/>
     </android.support.design.widget.TextInputLayout>
 
