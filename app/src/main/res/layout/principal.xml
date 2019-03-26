@@ -67,7 +67,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableLeft="@drawable/create1"
-                android:onClick="ViewRAnalisis"
+                android:onClick="ViewPAnalisis"
                 android:text="Análisis diario"
                 android:textSize="18sp" />
 
@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableLeft="@drawable/assignment1"
-                android:onClick="ViewRBResultado"
+                android:onClick="ViewPResultados"
                 android:text="Resultados"
                 android:textSize="18sp" />
 
@@ -102,6 +102,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableLeft="@drawable/done1"
+                android:onClick="ViewPRecordatorios"
                 android:text="Recordatorios"
                 android:textSize="18sp" />
 
@@ -112,7 +113,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableLeft="@drawable/help1"
-                android:onClick="ViewADAyuda"
+                android:onClick="ViewPAyuda"
                 android:text="Ayuda"
                 android:textSize="18sp" />
         </LinearLayout>
