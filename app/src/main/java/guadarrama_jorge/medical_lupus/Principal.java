@@ -1,10 +1,17 @@
 package guadarrama_jorge.medical_lupus;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-public class Principal extends AppCompatActivity {
+public class Principal extends AppCompatActivity
+{
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.principal);
+    }
     public void ViewPPrincipal(View view)
     {
         Intent myIntent = new Intent(view.getContext(), Principal.class);

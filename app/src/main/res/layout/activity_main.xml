@@ -1,82 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
-
-<?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-
-    <EditText
-        android:id="@+id/login_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="269dp"
-        android:layout_marginEnd="90dp"
-        android:ems="10"
-        android:textColor="@color/primaryTextColor"
-        android:hint="Correo electronico"
-        android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/password_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="97dp"
-        android:layout_marginTop="23dp"
-        android:layout_marginEnd="101dp"
-        android:ems="10"
-        android:hint="Contraseña"
-        android:textColor="@color/primaryTextColor"
-        android:inputType="numberPassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_email" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="176dp"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="176dp"
-        android:layout_marginBottom="214dp"
-        android:text="Registrarme"
-        android:textColor="@color/primaryTextColor"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button9"
-        app:layout_constraintVertical_bias="0.156" />
-
-    <Button
-        android:id="@+id/button9"
-        style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:onClick="ViewPHome"
-        android:text="Entrar"
-        android:textSize="18dp"
-        android:textColor="@color/primaryTextColor"
-        app:layout_constraintEnd_toEndOf="@+id/password_login"
-        app:layout_constraintStart_toStartOf="@+id/password_login"
-        app:layout_constraintTop_toBottomOf="@+id/password_login" />
-
-</android.support.constraint.ConstraintLayout>
-</android.support.v4.widget.NestedScrollView>
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:gravity="center">
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/secondaryColor"
+            android:textColorHint="@color/secondaryDarkColor"
+            android:hint="Correo electronico"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/password_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:textColor="@color/secondaryColor"
+            android:textColorHint="@color/secondaryDarkColor"
+            android:inputType="numberPassword" />
+        <Button
+            android:id="@+id/button9"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:onClick="ViewPHome"
+            android:text="Entrar"
+            android:textSize="20dp"
+            android:textColor="@color/primaryTextColor"/>
+        <TextView
+            android:onClick="GenericToast"
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Registrarme"
+            android:textColor="@color/primaryTextColor" />
+</LinearLayout>

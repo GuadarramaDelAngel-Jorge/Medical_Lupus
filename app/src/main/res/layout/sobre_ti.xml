@@ -6,11 +6,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorPrimary">
-
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <LinearLayout
             android:id="@+id/linearLayout"
             android:layout_width="wrap_content"
@@ -22,8 +20,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
-
             <Button
+                android:onClick="ViewSPrincipal"
                 android:id="@+id/button5"
                 style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
                 android:layout_width="wrap_content"
@@ -32,8 +30,8 @@
                 android:drawableLeft="@drawable/home1"
                 android:text="Inicio"
                 android:textSize="18sp"/>
-
             <Button
+                android:onClick="ViewSAnalisis"
                 android:id="@+id/button4"
                 style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
                 android:layout_width="wrap_content"
@@ -42,8 +40,8 @@
                 android:drawableLeft="@drawable/create1"
                 android:text="Análisis diario"
                 android:textSize="18sp"/>
-
             <Button
+                android:onClick="ViewSResultados"
                 android:id="@+id/button3"
                 style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
                 android:layout_width="wrap_content"
@@ -52,9 +50,7 @@
                 android:drawableLeft="@drawable/assignment1"
                 android:text="Resultados"
                 android:textSize="18sp"/>
-
         </LinearLayout>
-
         <LinearLayout
             android:id="@+id/linearLayout2"
             android:layout_width="wrap_content"
@@ -65,8 +61,8 @@
             app:layout_constraintEnd_toEndOf="@+id/linearLayout"
             app:layout_constraintStart_toStartOf="@+id/linearLayout"
             app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
             <Button
+                android:onClick="ViewSRecordatorios"
                 android:id="@+id/button"
                 style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
                 android:layout_width="wrap_content"
@@ -75,8 +71,8 @@
                 android:drawableLeft="@drawable/done1"
                 android:text="Recordatorios"
                 android:textSize="18sp"/>
-
             <Button
+                android:onClick="ViewSAyuda"
                 android:id="@+id/button6"
                 style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
                 android:layout_width="wrap_content"
@@ -308,6 +304,7 @@
 
             <Button
                 android:id="@+id/button11"
+                android:onClick="GenericToast"
                 style="@style/Widget.MaterialComponents.Button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

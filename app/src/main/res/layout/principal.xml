@@ -51,6 +51,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <Button
+                android:onClick="ViewPPrincipal"
                 android:id="@+id/button5"
                 style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
                 android:layout_width="wrap_content"
@@ -58,7 +59,7 @@
                 android:layout_weight="1"
                 android:drawableLeft="@drawable/home1"
                 android:text="Inicio"
-                android:textSize="18sp"
+                android:textSize="16sp"
                 />
 
             <Button
@@ -68,9 +69,9 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableLeft="@drawable/create1"
-                android:onClick="ViewRAnalisis"
+                android:onClick="ViewPAnalisis"
                 android:text="Análisis diario"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/button3"
@@ -81,7 +82,7 @@
                 android:drawableLeft="@drawable/assignment1"
                 android:onClick="ViewPResultados"
                 android:text="Resultados"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
         </LinearLayout>
 
@@ -105,7 +106,7 @@
                 android:drawableLeft="@drawable/done1"
                 android:onClick="ViewPRecordatorios"
                 android:text="Recordatorios"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
 
             <Button
                 android:id="@+id/button6"
@@ -116,7 +117,7 @@
                 android:drawableLeft="@drawable/help1"
                 android:onClick="ViewPAyuda"
                 android:text="Ayuda"
-                android:textSize="18sp" />
+                android:textSize="16sp" />
         </LinearLayout>
 
         <LinearLayout
