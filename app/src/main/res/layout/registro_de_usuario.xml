@@ -1,253 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
 
-    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
-                                                 xmlns:tools="http://schemas.android.com/tools"
-                                                 android:layout_width="match_parent"
-                                                 android:layout_height="wrap_content"
-                                                 android:background="@color/primaryColor">
-
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="wrap_content"
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:background="@color/colorPrimary"
+        android:paddingBottom="30dp">
 
         <Button
-            android:id="@+id/opciones_seguimiento"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawableLeft="@drawable/ic_email_black_24dp"
-            android:text="Inicio"
-            android:textSize="12sp"/>
-
-        <Button
-            android:id="@+id/button_sobre_ti"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawableLeft="@drawable/ic_child_care_black_24dp"
-            android:text="Análisis diario"
-            android:textSize="12sp"/>
-
-        <Button
-            android:id="@+id/button3"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawableLeft="@drawable/ic_call_black_24dp"
-            android:text="Resultados"
-            android:textSize="12sp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
-
-        <Button
-            android:id="@+id/button"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawableLeft="@drawable/ic_android_black_24dp"
-            android:text="Recordatorios"
-            android:textSize="12sp"/>
-
-        <Button
-            android:id="@+id/button6"
-            style="?android:attr/borderlessButtonStyle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:drawableLeft="@drawable/ic_android_black_24dp"
-            android:text="Ayuda"
-            android:textSize="12sp"/>
-    </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="68dp"
-        android:layout_height="59dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:src="@drawable/ic_round_calendar_today_24px_white"
-        android:tint="@color/primaryTextColor"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.201"/>
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout3"
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView17">
-
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/nombre"
+            android:id="@+id/button11"
+            style="@style/Widget.MaterialComponents.Button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="Nombre"
-            android:inputType="textLongMessage"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
+            android:text="Registrarse"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/editText22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textColorHint="@color/primaryTextColor"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/button11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/editText21"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Introduce el teléfono de tu médico"
+            android:inputType="phone"
             android:textColor="@color/primaryTextColor"
             android:textColorHint="@color/primaryTextColor"
-            android:textSize="16sp"/>
-    </android.support.design.widget.TextInputLayout>
+            app:layout_constraintBottom_toTopOf="@+id/editText22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout2"
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
-
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/Primer_apellido"
-            android:layout_width="433dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="Primer apellido"
-            android:inputType="textLongMessage"
-            android:textColor="@color/primaryLightColor"
-            android:textColorHint="@color/primaryLightColor"
-            android:textSize="16sp"/>
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout"
-        android:layout_width="395dp"
-        android:layout_height="41dp"
-        android:layout_margin="10dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.562"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
-
-        <android.support.design.widget.TextInputEditText
-            android:id="@+id/segundo_apellido"
+        <EditText
+            android:id="@+id/editText20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:hint="Segundo apellido"
-            android:inputType="textLongMessage"
-            android:textColor="@color/primaryLightColor"
-            android:textColorHint="@color/primaryLightColor"
-            android:textSize="16sp"/>
-    </android.support.design.widget.TextInputLayout>
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Introduce un nombre de médico"
+            android:inputType="textPersonName"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText21"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="394dp"
-        android:layout_height="50dp"
-        android:layout_margin="10dp"
-        android:ems="10"
-        android:hint="Correo electrónico"
-        android:inputType="textEmailAddress"
-        android:textColorHint="@color/secondaryLightColor"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"/>
+        <EditText
+            android:id="@+id/editText19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Introduce un número de seguro social"
+            android:inputType="textMultiLine"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        android:text="CheckBox"
-        android:textColor="@color/secondaryLightColor"
-        android:textColorHint="@color/secondaryLightColor"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/button10"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4"
-        tools:text="He leído y acepto los términos y condiciones"/>
+        <EditText
+            android:id="@+id/editText18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Introduce un número telefónico de emergencia 2"
+            android:inputType="phone"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText19"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Confirmar"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/checkBox"/>
+        <EditText
+            android:id="@+id/editText17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Introduce un número telefónico de emergencia 1"
+            android:inputType="phone"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/editText3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"/>
+        <EditText
+            android:id="@+id/editText16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Introduce tu número telefónico"
+            android:inputType="phone"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner"/>
+        <EditText
+            android:id="@+id/editText15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Introduce un estado"
+            android:inputType="text"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:ems="10"
-        android:hint="Número telefónico"
-        android:inputType="phone"
-        android:textColor="@color/secondaryLightColor"
-        android:textColorHint="@color/secondaryLightColor"
-        android:textSize="16sp"
-        app:layout_constraintTop_toTopOf="@+id/textInputLayout"
-        tools:layout_editor_absoluteX="9dp"/>
-
+<<<<<<< HEAD
     <EditText
         android:id="@+id/editText4"
         android:layout_width="327dp"
@@ -260,35 +168,91 @@
         android:textSize="16sp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="447dp" />
-
-    <EditText
-        android:id="@+id/editText5"
-        android:layout_width="324dp"
-        android:layout_height="39dp"
-        android:ems="10"
-        android:hint="Teléfono de emergencia 2"
-        android:inputType="phone"
-        android:textColor="@color/secondaryLightColor"
-        android:textColorHint="@color/secondaryLightColor"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="10dp"
-        tools:layout_editor_absoluteY="499dp"/>
-
-    <android.support.design.widget.TextInputLayout
-        android:id="@+id/textInputLayout4"
-        android:layout_width="395dp"
-        android:layout_height="wrap_content"
-        android:hint="Número de seguro social"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="565dp">
-
-        <android.support.design.widget.TextInputEditText
+=======
+        <EditText
+            android:id="@+id/editText14"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Número de seguro social"
-            android:textColor="@color/primaryLightColor"
-            android:textColorHint="@color/primaryLightColor"
-            android:textSize="16sp"/>
-    </android.support.design.widget.TextInputLayout>
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Introduce un correo electrónico"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/primaryTextColor"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+>>>>>>> bdcea7f3762e94dfb5750347d3e6f5967a1c584b
 
-</android.support.constraint.ConstraintLayout>
+        <EditText
+            android:id="@+id/editText13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Introduce una descripción personal"
+            android:inputType="textMultiLine"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <EditText
+            android:id="@+id/editText12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
+            android:ems="10"
+            android:hint="Introduce tu fecha de nacimiento"
+            android:inputType="date"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText10"/>
+
+        <EditText
+            android:id="@+id/editText10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:ems="5"
+            android:hint="Introduce tu nombre completo"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/primaryTextColor"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24"/>
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Introduce todos los datos para registrarte"
+            android:textColor="@color/secondaryColor"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>
