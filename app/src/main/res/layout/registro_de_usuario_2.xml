@@ -15,153 +15,225 @@
 
         <Button
             android:id="@+id/button11"
-            android:layout_width="wrap_content"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
-            tools:layout_editor_absoluteX="161dp"
-            tools:layout_editor_absoluteY="915dp"/>
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
+            android:text="Registrarse"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <EditText
             android:id="@+id/editText22"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
             android:ems="10"
             android:hint="Contraseña"
             android:inputType="textPassword"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="862dp"/>
+            android:textColorHint="@color/primaryTextColor"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/button11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <EditText
             android:id="@+id/editText21"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
             android:ems="10"
-            android:hint="Teléfono de médico"
+            android:hint="Introduce el teléfono de tu médico"
             android:inputType="phone"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="812dp"/>
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <EditText
             android:id="@+id/editText20"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
             android:ems="10"
+            android:hint="Introduce un nombre de médico"
             android:inputType="textPersonName"
-            android:text="Nombre de médico"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="761dp"/>
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText21"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <EditText
             android:id="@+id/editText19"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
             android:ems="10"
-            android:hint="Número de seguro social"
+            android:hint="Introduce un número de seguro social"
             android:inputType="textMultiLine"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="704dp"/>
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <EditText
             android:id="@+id/editText18"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
             android:ems="10"
-            android:hint="Número telefónico de emergencia 2"
+            android:hint="Introduce un número telefónico de emergencia 2"
             android:inputType="phone"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="634dp"/>
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText19"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <EditText
             android:id="@+id/editText17"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
             android:ems="10"
-            android:hint="Número telefónico de emergencia 1"
+            android:hint="Introduce un número telefónico de emergencia 1"
             android:inputType="phone"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="563dp"/>
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <EditText
             android:id="@+id/editText16"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
             android:ems="10"
-            android:hint="Número telefónico personal"
+            android:hint="Introduce tu número telefónico"
             android:inputType="phone"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="492dp"/>
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <EditText
             android:id="@+id/editText15"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Estado"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="420dp"/>
+            android:hint="Introduce un estado"
+            android:inputType="text"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <EditText
             android:id="@+id/editText14"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
             android:ems="10"
-            android:hint="Correo electrónico"
+            android:hint="Introduce un correo electrónico"
             android:inputType="textEmailAddress"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="344dp"/>
+            android:textColorHint="@color/primaryTextColor"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
 
         <EditText
             android:id="@+id/editText13"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
             android:ems="10"
-            android:hint="Descripción personal"
+            android:hint="Introduce una descripción personal"
             android:inputType="textMultiLine"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="269dp"/>
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
 
         <EditText
             android:id="@+id/editText12"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="25dp"
             android:ems="10"
-            android:hint="Fecha de nacimiento"
+            android:hint="Introduce tu fecha de nacimiento"
             android:inputType="date"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="207dp"/>
-
-        <EditText
-            android:id="@+id/editText11"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="141dp"/>
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColor"
+            app:layout_constraintBottom_toTopOf="@+id/editText13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText10"/>
 
         <EditText
             android:id="@+id/editText10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="8dp"
+            android:ems="5"
+            android:hint="Introduce tu nombre completo"
             android:inputType="textPersonName"
-            android:text="Name"
-            tools:layout_editor_absoluteX="99dp"
-            tools:layout_editor_absoluteY="77dp"/>
+            android:textColorHint="@color/primaryTextColor"
+            android:textColor="@color/primaryTextColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.333"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView24"/>
 
         <TextView
             android:id="@+id/textView24"
-            android:layout_width="wrap_content"
-            android:layout_height="26dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="25dp"
             android:layout_marginEnd="8dp"
             android:gravity="center"
             android:text="Introduce todos los datos para registrarte"
-            android:textColor="@color/primaryTextColor"
-            android:textSize="18sp"
+            android:textColor="@color/secondaryColor"
+            android:textSize="24sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.492"
             app:layout_constraintStart_toStartOf="parent"
