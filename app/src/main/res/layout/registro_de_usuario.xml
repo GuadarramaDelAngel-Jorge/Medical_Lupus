@@ -259,7 +259,7 @@
         android:textColorHint="@color/secondaryLightColor"
         android:textSize="16sp"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="447dp"/>
+        tools:layout_editor_absoluteY="447dp" />
 
     <EditText
         android:id="@+id/editText5"
