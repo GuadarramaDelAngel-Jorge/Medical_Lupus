@@ -58,7 +58,8 @@
                 android:layout_weight="1"
                 android:drawableLeft="@drawable/home1"
                 android:text="Inicio"
-                android:textSize="18sp" />
+                android:textSize="18sp"
+                />
 
             <Button
                 android:id="@+id/button4"
@@ -67,7 +68,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:drawableLeft="@drawable/create1"
-                android:onClick="ViewPAnalisis"
+                android:onClick="ViewRAnalisis"
                 android:text="Análisis diario"
                 android:textSize="18sp" />
 

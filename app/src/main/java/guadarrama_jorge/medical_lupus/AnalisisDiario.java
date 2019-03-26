@@ -12,19 +12,19 @@ public class AnalisisDiario extends AppCompatActivity {
         startActivityForResult(myIntent, 0);
     }
 
-    public void ViewPAnalisis(View view)
+    public void ViewAAnalisis(View view)
     {
         Intent myIntent = new Intent(view.getContext(), AnalisisDiario.class);
         startActivityForResult(myIntent, 0);
     }
 
-    public void ViewPResultados(View view)
+    public void ViewAResultados(View view)
     {
         Intent myIntent = new Intent(view.getContext(), Resultados.class);
         startActivityForResult(myIntent, 0);
     }
 
-    public void ViewPRecordatorios(View view)
+    public void ViewARecordatorios(View view)
     {
         Intent myIntent = new Intent(view.getContext(), Recordatorios.class);
         startActivityForResult(myIntent, 0);
