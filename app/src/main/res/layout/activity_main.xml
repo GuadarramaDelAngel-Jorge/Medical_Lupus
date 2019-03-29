@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center">
         <EditText
-            android:id="@+id/login_email"
+            android:id="@+id/email_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -27,7 +27,7 @@
             android:textColorHint="@color/secondaryDarkColor"
             android:inputType="numberPassword" />
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/boton_login"
             style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             android:textColor="@color/primaryTextColor"/>
         <TextView
             android:onClick="GenericToast"
-            android:id="@+id/textView19"
+            android:id="@+id/register_login_link"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
