@@ -1,19 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
-
-</android.support.constraint.ConstraintLayout>
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:gravity="center">
+        <EditText
+            android:id="@+id/login_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textColor="@color/secondaryColor"
+            android:textColorHint="@color/secondaryDarkColor"
+            android:hint="Correo electronico"
+            android:inputType="textEmailAddress"/>
+        <EditText
+            android:id="@+id/password_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:textColor="@color/secondaryColor"
+            android:textColorHint="@color/secondaryDarkColor"
+            android:inputType="numberPassword" />
+        <Button
+            android:id="@+id/button9"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:onClick="ViewPHome"
+            android:text="Entrar"
+            android:textSize="20dp"
+            android:textColor="@color/primaryTextColor"/>
+        <TextView
+            android:onClick="GenericToast"
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Registrarme"
+            android:textColor="@color/primaryTextColor" />
+</LinearLayout>

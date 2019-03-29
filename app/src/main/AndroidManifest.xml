@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="guadarrama_jorge.medical_lupus">
+    package="guadarrama_jorge.medical_lupus">
 
     <application
         android:allowBackup="true"
@@ -9,13 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Recordatorios"></activity>
+        <activity android:name=".Sobre_ti" />
+        <activity android:name=".Ayuda__politicas_y_privacidad" />
+        <activity android:name=".Resultados" />
         <activity android:name=".MainActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
+                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".AnalisisDiario" />
+        <activity android:name=".Principal" />
+        <activity android:name=".RegistroDeUsuario" />
+        <activity android:name=".AyudaSeguimiento" />
+        <activity android:name=".AyudaAjustes" />
+        <activity android:name=".AyudaRecordatorios" />
+        <activity android:name=".AyudaOpcionesDeSeguimiento" />
     </application>
 
 </manifest>
