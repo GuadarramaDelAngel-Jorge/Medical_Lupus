@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">Medical_Lupus</string>
+    <string name="Aguascalientes">Aguascalientes</string>
+    <string name="Baja_California">Baja California</string>>
+    <string name="Baja_California_Sur">Baja California Sur</string>
+    <string name="Campeche">Campeche</string>
+    <string name="Chiapas">Chiapas</string>
+    <string name="Chihuahua">Chihuahua</string>
+    <string name="Ciudad_de_Mexico">Ciudad de México</string>
+    <string name="Coahuila_de_Zaragoza">Coahuila de Zaragoza</string>
+    <string name="Colima">Colima</string>
+    <string name="Durango">Durango</string>
+    <string name="Estado_de_Mexico">Estado de México</string>
+    <string name="Guanajuato">Guanajuato</string>
+    <string name="Guerrero">Guerrero</string>
+    <string name="Hidalgo">Hidalgo</string>
+    <string name="Jalisco">Jalisco</string>
+    <string name="Michoacán_de_Ocampo">Michoacán de Ocampo</string>
+    <string name="Morelos">Morelos</string>
+    <string name="Nayarit">Nayarit</string>
+    <string name="Nuevo_Leon">Nuevo León</string>
+    <string name="Oaxaca">Oaxaca</string>
+    <string name="Puebla">Puebla</string>
+    <string name="Queretaro">Querétaro</string>
+    <string name="Quintana_Roo">Quintana Roo</string>
+    <string name="San_Luis_Potosi">San Luis Potosí</string>
+    <string name="Sinaloa">Sinaloa</string>
+    <string name="Sonora">Sonora</string>
+    <string name="Tabasco">Tabasco</string>
+    <string name="Tamaulipas">Tamaulipas</string>
+    <string name="Tlaxcala">Tlaxcala</string>
+    <string name="Veracruz_de_Ignacio_de_la_Llave">Veracruz de Ignacio de la Llave</string>
+    <string name="Yucatan">Yucatán</string>
+    <string name="Zacatecas">Zacatecas</string>
 </resources>

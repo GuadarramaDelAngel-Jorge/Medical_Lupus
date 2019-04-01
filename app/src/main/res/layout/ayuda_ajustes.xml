@@ -153,7 +153,7 @@
             app:layout_constraintTop_toBottomOf="@+id/opciones_seguimiento" />
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/foros"
             style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -167,7 +167,7 @@
             app:layout_constraintTop_toBottomOf="@+id/recordatorio"/>
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/politicas y privacidad"
             style="@style/Widget.MaterialComponents.Button.UnelevatedButton.Icon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -177,11 +177,11 @@
             android:background="@color/secondaryColor"
             android:onClick="ViewPPoliticas"
             android:text="Políticas y Privacidad"
-            app:layout_constraintEnd_toEndOf="parent"
             android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.345"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button7" />
+            app:layout_constraintTop_toBottomOf="@+id/foros" />
 
 
     </android.support.constraint.ConstraintLayout>
