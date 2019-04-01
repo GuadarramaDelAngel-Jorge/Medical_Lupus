@@ -13,20 +13,20 @@
         android:paddingBottom="30dp">
 
         <TextView
-            android:id="@+id/textView15"
+            android:id="@+id/Texto2_Principal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="28dp"
             android:text="Tu calendario es el siguiente:"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
             android:textColor="@color/secondaryColor"
-            app:layout_constraintEnd_toEndOf="@+id/textView14"
+            app:layout_constraintEnd_toEndOf="@+id/Bienvenida"
             app:layout_constraintHorizontal_bias="0.513"
-            app:layout_constraintStart_toStartOf="@+id/textView14"
-            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+            app:layout_constraintStart_toStartOf="@+id/Bienvenida"
+            app:layout_constraintTop_toBottomOf="@+id/Bienvenida" />
 
         <TextView
-            android:id="@+id/textView14"
+            android:id="@+id/Bienvenida"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="36dp"
@@ -132,7 +132,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView16">
+            app:layout_constraintTop_toBottomOf="@+id/Mes">
 
             <TableLayout
                 android:layout_width="match_parent"
@@ -175,7 +175,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView16"
+            android:id="@+id/Mes"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="52dp"
@@ -183,10 +183,10 @@
             android:text="Mes"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
             android:textColor="@color/secondaryColor"
-            app:layout_constraintEnd_toEndOf="@+id/textView15"
+            app:layout_constraintEnd_toEndOf="@+id/Texto2_Principal"
             app:layout_constraintHorizontal_bias="0.505"
-            app:layout_constraintStart_toStartOf="@+id/textView15"
-            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+            app:layout_constraintStart_toStartOf="@+id/Texto2_Principal"
+            app:layout_constraintTop_toBottomOf="@+id/Texto2_Principal" />
 
     </android.support.constraint.ConstraintLayout>
 </android.support.v4.widget.NestedScrollView>
